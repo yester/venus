@@ -42,3 +42,49 @@ router.get('/', function(req, res) {
 });
 
 module.exports = router;
+
+
+
+
+
+
+/**
+ * Created by Yester on 3/19/2015.
+ */
+
+var express = require('express');
+var app = express();
+
+
+app.get('/hello.txt', function(req,res){
+
+        var sqlite3 = require('sqlite3');
+        sqlite3.verbose();
+
+        var db = new sqlite3.Database('db/videos.db');
+
+        var output = "";
+        db.all("select id, name from tb_videos", function(err, rows){
+
+            rows.forEach(function(row){
+            output += row.id +":"+row.name;
+
+
+
+            });
+
+            res.send('Hello World'+output);
+        });
+
+        db.close();
+
+
+
+    }
+);
+
+var server = app.listen(3000, function(){
+ console.log('Listening on port %d', server.address().port);
+
+});
+
