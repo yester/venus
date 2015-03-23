@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html ng-app="videoListApp">
+<head>
+
+    <script src="../lib/angular.min.js"></script>
+    <script src="../scripts/controller.js"></script>
+    <link href="../styles/base.css" rel="stylesheet">
+
+    <title>list</title>
+
+</head>
+<body ng-controller="VideoListCtrl">
+
+Search: <input ng-model="query">
+
+<div class="item pull-left masonry-brick" ng-repeat="video in videos | filter: query">
+    <a href="video link" target="_blank"><img src="video image" class="img"></a>
+    <div style="padding:16px 14px 16px 14px; background-color: #FAFAFA; border-top: 1px solid #F2F2F2;">
+    <a href="video link" target="_blank">{{video.title}}</a> <i class="icon-fire icon-white" style="background-color:#cc0000"></i><br>
+    <span style="color:#CC0000;font-size:12px;">{{video.code}}</span> / <span style="color:#CC0000;font-size:12px;">{{video.releasedDate}}</span>
+    </div>
+</div>
+
+
+</body>
+</html>
+
+
+

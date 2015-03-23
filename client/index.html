@@ -1,10 +1,10 @@
 <!DOCTYPE HTML>
-<html ng-app>
+<html ng-app="videoListApp">
 <head>
     <script src="lib/angular.min.js"></script>
-
+    <script src="scripts/controller.js"></script>
 </head>
-<body>
+<body ng-controller="VideoListCtrl">
 Your name: <input type="text" ng-model="name" placeholder="World">
 <hr>
 Hello {{name || 'World'}}!

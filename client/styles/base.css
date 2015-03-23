@@ -1,0 +1,255 @@
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #D80456;
+    text-decoration: none;
+}
+
+body {
+    background-color: #EEEEEB;
+    font-family:Arial;
+}
+
+.top
+{
+    background: #EEEEEB url('../images/top.bg.png') repeat-x;
+    height: 64px;
+}
+
+.top .logo
+{
+    background: url('../images/logo.png') no-repeat;
+    display: block;
+    text-indent: -90000px;
+    height: 40px;
+    width: 145px;
+    margin-top:10px;
+}
+
+.top .search-form
+{
+    margin-top:15px;
+    margin-left:10px;
+    color:#FFF;
+}
+
+.top .nav-group
+{
+    margin-top:15px;
+    margin-left:10px;
+    color:#FFF;
+}
+.content
+{
+    margin-top: 64px;
+    background-color: #EEEEEB;
+}
+
+.main
+{
+    margin:0px auto;
+}
+
+.movie
+{
+    padding: 20px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,.3);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,.3);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.3);
+}
+
+.info p {
+    word-break:break-all;
+    font-size:14px;
+}
+
+.info .genre
+{
+    margin-right: 15px;
+}
+
+.info .header
+{
+    font-weight:bold;
+    font-size:14px;
+}
+
+.genre .textbox
+{
+    padding:20px 0px 20px 0px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,.3);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,.3);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.3);
+}
+
+.genre .genreitem
+{
+    margin:10px auto;
+    width: 14.285714285714285%;
+    text-align:center;
+}
+
+.comment
+{
+    margin:30px auto;
+}
+
+
+#waterfall .item
+{
+    margin: 20px 0px 0px 0px;
+    width: 175px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,.3);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,.3);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.3);
+}
+
+#waterfall .item .img
+{
+    margin:16px 14px 16px 14px;
+    width: 147px;
+    height: 200px;
+}
+
+#waterfall .item .avatar
+{
+    margin:25px;
+    width: 125px;
+    height: 125px;
+}
+
+#waterfall .item .star
+{
+    width: 125px;
+    height: 125px;
+}
+
+#waterfall .item .starInfo
+{
+    width: 50px;
+    height: 125px;
+}
+
+.bottom
+{
+    padding: 20px 0px 20px 0px;
+    color:#F6F2E6;
+    background: #1D1A18;
+}
+
+.bottom a
+{
+    line-height: 25px;
+    color: #F6F2E6;
+    text-decoration: none;
+}
+
+.sample-box ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.sample-box li {
+    margin: 8px;
+    float: left;
+    width:140px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,.3);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,.3);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.3);
+}
+
+.sample-box img {
+    width:120px;
+    height:90px;
+    margin:10px;
+}
+
+.star-box ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.star-box li {
+    margin: 7px;
+    float: left;
+    width: 120px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,.3);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,.3);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.3);
+}
+.star-box img {
+    width:100px;
+    height:100px;
+    margin:10px;
+}
+
+.star-box .star-name {
+    padding:7px 0px 7px 0px;
+    background-color: #FAFAFA;
+    border-top: 1px solid #F2F2F2;
+}
+
+.index-language {
+    color:#FFF;
+    font-family:"Helvetica Neue",Helvetica,Arial,"Microsoft YaHei","Microsoft JhengHei",STHeiti,MingLiu;
+}
+
+.en {
+    margin-top:30px;
+    margin-bottom:20px;
+    background-color: #8D44AD;
+}
+
+
+.ja {
+    margin-top:30px;
+    margin-bottom:20px;
+    background-color: #F39C11
+}
+
+.tw {
+    background-color: #297FB8;
+}
+
+.cn {
+    background-color: #C1392B;
+}
+
+#index-share .addthis_toolbox {
+    float:right;
+    width: 535px;
+    margin-top: 15px;
+}
+
+#index-share .bdshare_toolbox
+{
+    float:right;
+    width: 485px;
+    margin-top: 8px;
+}
+
+#movie-share .addthis_toolbox {
+    width: 535px;
+    margin: 0 auto;
+}
+
+#movie-share .bdshare_toolbox
+{
+    width: 485px;
+    margin: 0 auto;
+}
+
+#ClCache { display: none; }
