@@ -83,6 +83,38 @@ app.get('/hello.txt', function(req,res){
     }
 );
 
+
+app.get('/list', function(req,res){
+
+        var sqlite3 = require('sqlite3');
+        sqlite3.verbose();
+
+        var db = new sqlite3.Database('db/videos.db');
+
+
+        var listJSON ={};
+        var i = 0;
+        db.all("select id, name from tb_videos", function(err, rows){
+
+            rows.forEach(function(row){
+
+                var itemJSON = {};
+                itemJSON.id= row.id;
+                itemJSON.name = row.name;
+                listJSON[i]= itemJSON;
+                i++;
+            });
+
+            //res.send('list:'+output);
+
+            res.json(listJSON);
+            //res.json({ user: 'tobi' })
+        });
+
+        db.close();
+    }
+);
+
 var server = app.listen(3000, function(){
  console.log('Listening on port %d', server.address().port);
 
