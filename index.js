@@ -120,3 +120,18 @@ var server = app.listen(3000, function(){
 
 });
 
+
+
+//package.json 
+//npm install nodejs
+//npm install express
+//npm install sqlite3
+
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "4.12.3"
+
+  }
+}
