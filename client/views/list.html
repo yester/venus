@@ -13,17 +13,21 @@
 
 Search: <input ng-model="query">
 
-<div class="item pull-left masonry-brick" ng-repeat="video in videos | filter: query">
-    <a href="video link" target="_blank"><img src="video image" class="img"></a>
+
+<div class="main" >
+  <div id="waterfall" class="masonry" style="position: relative;">
+
+
+<div class="item pull-left masonry-brick" style="position: absolute; top: 0px; left: 0px;" ng-repeat="video in videos | filter: query">
+    <a href="video link" target="_blank"><img src="../videos/miad/miad-600/miad00600ps.jpg" class="img"></a>
     <div style="padding:16px 14px 16px 14px; background-color: #FAFAFA; border-top: 1px solid #F2F2F2;">
-    <a href="video link" target="_blank">{{video.title}}</a> <i class="icon-fire icon-white" style="background-color:#cc0000"></i><br>
-    <span style="color:#CC0000;font-size:12px;">{{video.code}}</span> / <span style="color:#CC0000;font-size:12px;">{{video.releasedDate}}</span>
+    <a href="video link" target="_blank">{{video.video_title}}</a> <i class="icon-fire icon-white" style="background-color:#cc0000"></i><br>
+    <span style="color:#CC0000;font-size:12px;">{{video.video_code}}</span> / <span style="color:#CC0000;font-size:12px;">{{video.video_released}}</span>
     </div>
 </div>
 
+</div>
+</div>
 
 </body>
 </html>
-
-
-
